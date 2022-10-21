@@ -58,7 +58,7 @@ export const authActiveDirectory = async (req: Request, res: Response) => {
 export const getUsers: RequestHandler = async (req, res) => {
   try {
     // const registro = await getRepository(User).find({});
-    return res.json("hello world");
+    return res.json({msn: "hello word"});
   } catch (err) {
     console.log(err);
     return res.status(500).json({ msn: "Error Server 😕 ❗️❗️" });

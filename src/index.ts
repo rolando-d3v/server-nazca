@@ -1,9 +1,14 @@
 import express from "express";
 import cors from "cors";
 import morgan from "morgan";
+import dotenv from 'dotenv'
+
 import "reflect-metadata";
+import { createConnection } from 'typeorm';
 // import ActiveDirectory from "activedirectory2";
 import authRoutes from "./api/auth/auth.routes";
+
+dotenv.config()
 
 const app = express();
 
@@ -12,6 +17,7 @@ const port = 5000;
 app.listen(port, () => {
   console.log(`🔥  🚀  server runn port ➡️ ... ${port} 😃  ✔️`);
 });
+
 
 //middlewares
 app.use(morgan("dev"));
@@ -24,6 +30,14 @@ app.use(express.urlencoded({ extended: false }));
 //routes
 app.use("/auth", authRoutes);
 // app.use('/cursos', cursosRoutes)
+
+
+
+//db server
+createConnection()
+    .then(() => console.log('db mysql connected'))
+    .catch(error => console.log({ msn: "Error: Connectionn", error }));
+
 
 
 
