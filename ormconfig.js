@@ -10,7 +10,7 @@ module.exports = {
    // "password": process.env.DB_PASSWORD,
    // "database": "TRAMITE",
    // "database": "DIEBDDE",
-   "sid": "xe",
+   "sid": "DIEBDDE",
    "synchronize": false,
    "logging": false,
    "entities": [
