@@ -22,9 +22,10 @@
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
     "node-gyp": "^9.3.0",
+    "pg": "^8.8.0",
     "rebuild": "^0.1.2",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.3.10"
+    "typeorm": "^0.3.11"
   },
   "devDependencies": {
     "@types/activedirectory2": "^1.2.3",

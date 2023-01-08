@@ -2,18 +2,19 @@ import express from "express";
 import cors from "cors";
 import morgan from "morgan";
 import dotenv from 'dotenv'
-
 import "reflect-metadata";
 import { createConnection } from 'typeorm';
-// import ActiveDirectory from "activedirectory2";
+
 import authRoutes from "./api/auth/auth.routes";
 
 dotenv.config()
 
+
+
+//server app
 const app = express();
 
 const port = 4000;
-//server app
 app.listen(port, () => {
   console.log(`🔥  🚀  server runn port ➡️ ... ${port} 😃  ✔️`);
 });
@@ -34,9 +35,9 @@ app.use("/auth", authRoutes);
 
 
 //db server
-createConnection()
-    .then(() => console.log('db mysql connected'))
-    .catch(error => console.log({ msn: "Error: Connectionn", error }));
+// createConnection()
+//     .then(() => console.log('db mysql connected'))
+//     .catch(error => console.log({ msn: "Error: Connectionn", error }));
 
 
 
