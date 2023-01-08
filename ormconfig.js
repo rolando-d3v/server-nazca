@@ -6,6 +6,7 @@ module.exports = {
 
    "port":  1521,
    "username": "tramite",
+   "username": "tramite",
 
    "password": "123456",
    // "host": process.env.DB_HOST,
