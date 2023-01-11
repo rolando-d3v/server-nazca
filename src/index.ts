@@ -27,17 +27,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 
-
 //routes
 app.use("/auth", authRoutes);
 // app.use('/cursos', cursosRoutes)
 
 
-
 //db server
-// createConnection()
-//     .then(() => console.log('db mysql connected'))
-//     .catch(error => console.log({ msn: "Error: Connectionn", error }));
+createConnection()
+    .then(() => console.log('postgres connected'))
+    .catch(error => console.log({ msn: "Error: Connectionn", error }));
 
 
 

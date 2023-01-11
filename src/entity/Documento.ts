@@ -2,7 +2,7 @@ import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateCol
 
 
 @Entity()
-export class User {
+export class Documento {
   @PrimaryGeneratedColumn("uuid")
   codigo: string;
 
