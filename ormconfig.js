@@ -1,13 +1,13 @@
 module.exports = {
   // "port": process.env.DB_PORT,
-  // "username": process.env.DB_USERNAME,
+  // "username": process.env.DB_USERNAME, synchronize 
   // "password": process.env.DB_PASSWORD,
   // "database": "TRAMITE",
   type: "postgres",
   port: 5432,
   username: "postgres",
   host: "localhost",
-  database: "PORTAL_CIE",
+  database: "PERSONAL",
   password: "Rolando",
   synchronize: true,
 
