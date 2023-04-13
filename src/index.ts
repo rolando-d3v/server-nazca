@@ -15,7 +15,7 @@ dotenv.config()
 //server app
 const app = express();
 
-const port = 4000;
+const port = 5000;
 app.listen(port, () => {
   console.log(`🔥  🚀  server runn port ➡️ ... ${port} 😃  ✔️`);
 });

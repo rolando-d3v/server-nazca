@@ -39,7 +39,7 @@ export const authActiveDirectory = async (req: Request, res: Response) => {
       }
 
       if (auth) {
-        return res.json({ msn: "Login successfully 😃 ✔️" });
+        return res.json({ msn: "Login successfully 😃 ✔️", auth, username });
       } else {
         return res
           .status(500)
